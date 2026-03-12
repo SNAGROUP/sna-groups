@@ -2,27 +2,32 @@
 <html>
 
 <head>
+
 <title>Admin Panel</title>
+
 <link rel="stylesheet" href="style.css">
+
+<script src="cms.js"></script>
+
 </head>
 
 <body>
 
-<header>SNA GROUPS Admin</header>
+<header>Admin Website Editor</header>
 
-<div class="container">
+<div class="admin-box">
 
-<div class="card">
+<h2>Edit Website Text</h2>
 
-<h3>Admin Control</h3>
+<textarea data-edit="service1">Translation Service</textarea>
 
-<ul>
-<li>View Customer Requests</li>
-<li>Update Status</li>
-<li>Upload Documents</li>
-</ul>
+<textarea data-edit="service2">Immigration Service</textarea>
 
-</div>
+<textarea data-edit="service3">Land & Building Tax</textarea>
+
+<br>
+
+<button onclick="saveContent()">Save Website</button>
 
 </div>
 
