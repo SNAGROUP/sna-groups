@@ -2,43 +2,77 @@
 <html>
 
 <head>
+
 <title>SNA GROUPS</title>
+
 <link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai&family=Inter&display=swap" rel="stylesheet">
+
+<script src="app.js"></script>
+<script src="cms.js"></script>
+
 </head>
 
 <body>
 
-<header>SNA GROUPS Service Portal</header>
+<header id="siteTitle"></header>
 
 <div class="container">
 
+<div class="grid">
+
 <div class="card">
 
-<h2>Choose Service</h2>
+<h3 data-edit="service1"></h3>
 
 <a href="translation.html">
-<button>Translation Service</button>
-</a>
-
-<br><br>
-
-<a href="immigration.html">
-<button>Immigration Service</button>
-</a>
-
-<br><br>
-
-<a href="landtax.html">
-<button>Land & Building Tax</button>
-</a>
-
-<br><br>
-
-<a href="login.html">
-<button>Customer Login</button>
+<button>Open</button>
 </a>
 
 </div>
+
+<div class="card">
+
+<h3 data-edit="service2"></h3>
+
+<a href="immigration.html">
+<button>Open</button>
+</a>
+
+</div>
+
+<div class="card">
+
+<h3 data-edit="service3"></h3>
+
+<a href="landtax.html">
+<button>Open</button>
+</a>
+
+</div>
+
+</div>
+
+<br>
+
+<center>
+
+<button onclick="setThai()">ไทย</button>
+<button onclick="setEng()">English</button>
+
+<select onchange="setColor(this.value)">
+<option value="#1a73e8">Blue</option>
+<option value="#27ae60">Green</option>
+<option value="#8e44ad">Purple</option>
+<option value="#e74c3c">Red</option>
+</select>
+
+<br><br>
+
+<a href="login.html"><button>Customer Login</button></a>
+
+</center>
 
 </div>
 
