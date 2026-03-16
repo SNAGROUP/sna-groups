@@ -7,74 +7,100 @@
 
 <link rel="stylesheet" href="style.css">
 
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai&family=Inter&display=swap" rel="stylesheet">
-
-<script src="app.js"></script>
-<script src="cms.js"></script>
-
 </head>
 
 <body>
 
-<header id="siteTitle"></header>
+<header class="topbar">
 
-<div class="container">
+<div class="logo">
+SNA GROUPS
+</div>
 
-<div class="grid">
+<nav>
 
-<div class="card">
+<a href="index.html">หน้าหลัก</a>
 
-<h3 data-edit="service1"></h3>
+<a href="#services">บริการของเรา</a>
+
+<a href="login.html">Admin</a>
+
+</nav>
+
+</header>
+
+<section class="hero">
+
+<h1>ศูนย์บริการ SNA GROUPS</h1>
+
+<p>Translation • Immigration • Land Tax Services</p>
+
+</section>
+
+<section id="services" class="services">
+
+<h2>บริการของเรา</h2>
+
+<div class="service-grid">
+
+<div class="service-card">
+
+<h3>บริการแปลเอกสาร</h3>
+
+<p>
+แปลเอกสารราชการ พาสปอร์ต ทะเบียนสมรส ใบเกิด และเอกสารอื่นๆ
+</p>
 
 <a href="translation.html">
-<button>Open</button>
+
+<button>เลือกบริการ</button>
+
 </a>
 
 </div>
 
-<div class="card">
+<div class="service-card">
 
-<h3 data-edit="service2"></h3>
+<h3>บริการตรวจคนเข้าเมือง</h3>
+
+<p>
+บริการ TM30 รายงานตัว 90 วัน ต่อวีซ่า และบริการด้านตรวจคนเข้าเมือง
+</p>
 
 <a href="immigration.html">
-<button>Open</button>
+
+<button>เลือกบริการ</button>
+
 </a>
 
 </div>
 
-<div class="card">
+<div class="service-card">
 
-<h3 data-edit="service3"></h3>
+<h3>ภาษีที่ดินและสิ่งปลูกสร้าง</h3>
+
+<p>
+บริการจัดการภาษีที่ดินและสิ่งปลูกสร้าง
+</p>
 
 <a href="landtax.html">
-<button>Open</button>
+
+<button>เลือกบริการ</button>
+
 </a>
 
 </div>
 
 </div>
 
-<br>
+</section>
 
-<center>
+<footer>
 
-<button onclick="setThai()">ไทย</button>
-<button onclick="setEng()">English</button>
+© SNA GROUPS
 
-<select onchange="setColor(this.value)">
-<option value="#1a73e8">Blue</option>
-<option value="#27ae60">Green</option>
-<option value="#8e44ad">Purple</option>
-<option value="#e74c3c">Red</option>
-</select>
-
-<br><br>
-
-<a href="login.html"><button>Customer Login</button></a>
-
-</center>
-
-</div>
+</footer>
 
 </body>
+
 </html>
