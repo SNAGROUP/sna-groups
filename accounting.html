@@ -3,34 +3,25 @@
 <head>
 <meta charset="UTF-8">
 <title>ระบบบัญชี</title>
-<link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
 <h2>📊 ระบบบัญชี</h2>
 
-<!-- ฟอร์มเพิ่มรายการ -->
-<div>
-  <input type="date" id="date">
-  <input type="text" id="name" placeholder="ชื่อ">
-  <input type="text" id="account" placeholder="เลขบัญชี">
-  <input type="number" id="income" placeholder="เงินเข้า">
-  <input type="number" id="expense" placeholder="เงินออก">
-  <button onclick="addTransaction()">เพิ่ม</button>
-</div>
-
-<br>
-
-<!-- Import Excel -->
-<input type="file" id="excelFile">
+<input type="date" id="date">
+<input type="text" id="name" placeholder="ชื่อ">
+<input type="text" id="account" placeholder="เลขบัญชี">
+<input type="number" id="income" placeholder="เงินเข้า">
+<input type="number" id="expense" placeholder="เงินออก">
+<button onclick="addTransaction()">เพิ่ม</button>
 
 <br><br>
 
+<input type="file" id="excelFile">
 <button onclick="exportExcel()">Export Excel</button>
 
-<!-- ตาราง -->
-<table border="1" id="table">
+<table border="1">
   <thead>
     <tr>
       <th>วันที่</th>
@@ -40,7 +31,7 @@
       <th>เงินออก</th>
     </tr>
   </thead>
-  <tbody></tbody>
+  <tbody id="tableBody"></tbody>
 </table>
 
 <script src="https://cdn.jsdelivr.net/npm/xlsx/dist/xlsx.full.min.js"></script>
