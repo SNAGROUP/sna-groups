@@ -1,36 +1,34 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="th">
 <head>
-<title>Customer Dashboard</title>
-<link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>SNA GROUP Portal</title>
+<link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-<header>Customer Dashboard</header>
-
 <div class="container">
 
-<div class="card">
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h2>SNA GROUP</h2>
 
-<h3>Your Request Status</h3>
+    <a href="#" onclick="loadPage('accounting.html')">📊 บัญชี</a>
+    <a href="#" onclick="loadPage('immigration.html')">🛂 วีซ่า</a>
+    <a href="#" onclick="loadPage('landtax.html')">🏠 ภาษีที่ดิน</a>
+    <a href="#" onclick="loadPage('translation.html')">🌐 แปลเอกสาร</a>
 
-<ul>
-<li>Translation Request – Pending</li>
-<li>Immigration TM30 – Processing</li>
-<li>Land Tax – Completed</li>
-</ul>
+  </div>
 
-<br>
-
-<a href="index.html">
-<button>Back to Home</button>
-</a>
-
-</div>
+  <!-- Main -->
+  <div class="main">
+    <iframe id="contentFrame" src="accounting.html"></iframe>
+  </div>
 
 </div>
+
+<script src="js/app.js"></script>
 
 </body>
 </html>
